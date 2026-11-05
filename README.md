@@ -2,6 +2,8 @@
 
 **QA Engineer · Test Automation** · Montevideo, Uruguay
 
+🔎 **Open to QA Automation roles** (remote or Montevideo)
+
 I've spent more than four years testing web, mobile, API, IoT and AI-powered products for global companies, including
 **WHOOP** (via OrangeLoops), **Jam City** and **Globant**. These days my focus is test automation: I build UI and API
 suites with **Playwright and TypeScript**, and I've also automated regression suites with Selenium WebDriver and Node.js.
