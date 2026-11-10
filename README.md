@@ -21,13 +21,22 @@ I've worked as a QA in agile, remote, cross-functional teams, and here's what I'
 
 ### [athena-bank-playwright-tests](https://github.com/Zetyre/athena-bank-playwright-tests)
 
-A Playwright + TypeScript framework for a full-stack banking app (React, Node.js, MongoDB).
+A Playwright + TypeScript framework for a full-stack banking app (React, Node.js, MongoDB), finished at
+[v1.2.1](https://github.com/Zetyre/athena-bank-playwright-tests/releases/tag/v1.2.1).
 
-- 36 test cases, run 76 times across Chromium, Firefox, WebKit and a browserless API project
-- Typed fixtures, page objects, per-test data created through the API, and network mocking for error states
-- GitHub Actions pipeline: lint and type checks, one job per browser, a merged HTML report, and a
+- 79 test cases, 179 runs across Chromium, Firefox, WebKit and a browserless API project, in about two minutes
+- **Found 13 bugs**, including a self-transfer that creates money, simultaneous transfers that all succeed, and an
+  API that appends an amount sent as text ("100" turns 1,000 into 1,000,100), each reported with steps to
+  reproduce, screenshots and root cause
+- The app has no specification, so findings are classified as **bugs** (the app contradicts itself or basic
+  correctness) or **observations** (gaps against WCAG, OWASP ASVS and common practice)
+- WCAG 2.2 AA scans with axe-core, plus keyboard, page language and autofill checks
+- Known bugs stay in the suite as expected failures, and a small custom reporter fails the run if one fails for the
+  wrong reason
+- GitHub Actions: quality gate, one job per browser, merged report and a
   [published report archive](https://zetyre.github.io/athena-bank-playwright-tests/)
-- Found and reported two real defects in the app under test, including a race condition in concurrent transfers
+- Every test documented in a
+  [test case catalogue](https://github.com/Zetyre/athena-bank-playwright-tests/blob/main/docs/test-cases.md)
 
 ## Experience
 
